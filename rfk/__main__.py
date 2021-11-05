@@ -9,7 +9,7 @@ from game.handle_collisions_action import HandleCollisionsAction
 from game.move_actors_action import MoveActorsAction
 from game.input_service import InputService
 from game.output_service import OutputService
-from asciimatics.screen import Screen 
+from asciimatics.screen import Screen
 
 def main(screen):
 
@@ -17,7 +17,7 @@ def main(screen):
     cast = {}
 
     marquee = Actor()
-    marquee.set_tag("marquee")
+    # marquee.set_tag("marquee")
     marquee.set_text("")
     marquee.set_position(Point(1, 0))
     cast["marquee"] = [marquee]
@@ -26,7 +26,7 @@ def main(screen):
     y = int(constants.MAX_Y / 2)
     position = Point(x, y)
     robot = Actor()
-    robot.set_tag("robot")
+    # robot.set_tag("robot")
     robot.set_text("#")
     robot.set_position(position)
     cast["robot"] = [robot]
@@ -39,7 +39,7 @@ def main(screen):
         y = random.randint(1, constants.MAX_Y - 1)
         position = Point(x, y)
         artifact = Actor()
-        artifact.set_tag("artifact")
+        # artifact.set_tag("artifact")
         artifact.set_description(description)
         artifact.set_text(text)
         artifact.set_position(position)
